@@ -1,0 +1,22 @@
+server:
+  port: 8091
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          demo:
+            client-id: demo01
+            authorization-grant-type: authorization_code
+            scope:
+              - openid
+              - profile
+        provider:
+          demo:
+            issuer-uri: http://localhost:8090/auth/realms/demo
+            user-name-attribute: preferred_username

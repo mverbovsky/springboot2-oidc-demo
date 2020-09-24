@@ -1,0 +1,43 @@
+# top-most EditorConfig file
+root = true
+
+# defaults
+[*]
+charset=utf-8
+indent_style=space
+indent_size=4
+# Unix-style newlines with a newline ending every file
+end_of_line=lf
+insert_final_newline=true
+
+[*.{groovy,java}]
+continuation_indent_size = 8
+
+# Kotlin
+[*.{kt,kts}]
+
+[*.xml]
+continuation_indent_size = 8
+
+# YAML
+# http://yaml.org/spec/1.2/2009-07-21/spec.html#id2576668
+[*.{yaml,yml}]
+indent_size = 2
+indent_style = space
+
+# Shell
+# https://google.github.io/styleguide/shell.xml#Indentation
+[*.{bash,sh,zsh}]
+indent_size = 2
+indent_style = space
+
+# HTML
+# https://google.github.io/styleguide/htmlcssguide.xml#General_Formatting_Rules
+[*.{htm,html}]
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
+
+[suppressions.xml]
+indent_size = 3
+continuation_indent_size = 6

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>springboot2-oidc-client-webapp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <h1 class="mt-4">
+                    <p>Welcome</p>
+                    <p class="text-primary" th:text="${name}"></p>
+                    <p>you have assigned these roles</p>
+                    <p class="text-primary" th:text="${roles}"></p>
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

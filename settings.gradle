@@ -1,0 +1,3 @@
+rootProject.name = 'springboot2-oidc-demo'
+include(':springboot2-oidc-client-webapp')
+include(':springboot2-oidc-resource-server')
